@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="splash_title">Welcome!</string>
+    <string name="info">In Tic Tac Toe, you will be taking the role of the \'O\' character, and the AI will be the \'X\' player. Each player takes turns selecting a square on a 3x3 grid, and the winner is the one who can align three of their own symbol in a row (horizontally, vertically, or diagonally). Good luck! (You'll need it, since my AI is unable to lose!)</string>
+    <string name="begin_button">Begin!</string>
 </resources>
