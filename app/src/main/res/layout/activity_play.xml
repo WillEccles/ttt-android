@@ -19,26 +19,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button0"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="36sp"
+                android:onClick="boxClicked"
+                android:foreground="@mipmap/box"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
         </TableRow>
 
@@ -46,25 +52,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
         </TableRow>
 
@@ -72,32 +84,38 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:text=""
-                android:textSize="36sp" />
-
-            <Button
+            <ImageButton
                 android:id="@+id/button6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button7"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text=""
+                android:onClick="boxClicked"
+                android:foreground="@mipmap/box"
+                android:textSize="36sp" />
+
+            <ImageButton
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:foreground="@mipmap/box"
+                android:onClick="boxClicked"
                 android:textSize="36sp" />
         </TableRow>
 
     </TableLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
@@ -110,4 +128,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="13dp"
+        android:onClick="resetClicked"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
 </android.support.constraint.ConstraintLayout>
